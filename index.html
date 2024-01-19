@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Shifumi</title>
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+
+        <div id="rules">
+            <div id="rulesText">
+                <img src="assets/img/logoserie.png" alt="">
+                <p class="legende">Le Shifumi Officiel</p>
+                <p>La pierre bat le ciseau.</p>
+                <p>Le ciseau bat la feuille.</p>
+                <p>La feuille bat la pierre.</p>
+                <p>Le braqueur doit choisir un signe parmi 3 propositions : pierre, papier, ciseau.</p>
+                <p>La police choisit son signe aléatoirement en même temps que le braqueur.</p>
+                <p>Le braquage se déroule en 10 parties gagnantes, le premier arrivé à 6 remporte le contrôle de la banque.
+                </p>
+                <p>Une égalité est possible... Mais vous devrez vous départager par la force</p>
+                <p>Choisissez bien vos coups, 50 millions d'euros sont en jeu. Bonne chance !</p>
+            </div>
+            <p id="rulesIcon">REGLES <span>&#9776;</span></p>
+        </div>
+
+        <section id="accueil">
+
+            <div id="sectionBlur">
+
+                <div class="avatarChoice">
+
+                    <div class="choiceAvatarText">
+                        <p>Choisissez un Avatar</p>
+                    </div>
+
+                    <div class="imagesAvatar">
+                        <button class="avant"><span>&#10148;</span></button>
+                        <img src="assets/img/avatar1.png" alt="">
+                        <img src="assets/img/avatar2.png" alt="">
+                        <img src="assets/img/avatar3.png" alt="">
+                        <img src="assets/img/avatar4.png" alt="">
+                        <img src="assets/img/avatar5.png" alt="">
+                        <img src="assets/img/avatar6.png" alt="">
+                        <img src="assets/img/avatar7.png" alt="">
+                        <button class="prec"><span>&#10148;</span></button>
+                    </div>
+
+                    <div class="pseudoText">
+                        <label for="pseudo">Entrez votre pseudo</label>
+                    </div>
+
+                    <div class="inputPseudo">
+                        <input type="pseudo" id="pseudo" placeholder="Utilisateur">
+                    </div>
+
+                </div>
+
+                <div class="confirm"><button id="confirmButton">Confirmer</button></div>
+
+            </div>
+
+        </section>
+
+        <section id="mainGame">
+
+            <div class="scoreCounter">
+                <p>SCORE</p>
+                <span id="scoreUser"></span><span> : </span><span id="scoreIA"></span>
+            </div>
+
+            <div id="sectionBlurSecond">
+
+                <div class="eventsGame">
+
+                    <div class="avatarFlexOne" id="avatarFinalUser">
+                        <img src="assets/img/avatar1.png" alt="">
+                        <p class="pseudoUser"></p>
+                    </div>
+
+                    <div class="signs">
+                        <img src="assets/img/pierre.png" alt="">
+                        <img src="assets/img/feuille.png" alt="">
+                        <img src="assets/img/ciseau.png" alt="">
+                        <button class="replayArrow">&#8617;</button>
+                    </div>
+
+                    <div class="division"></div>
+
+                    <div class="ia">
+                        <img src="assets/img/pierre.png" alt="">
+                        <img src="assets/img/feuille.png" alt="">
+                        <img src="assets/img/ciseau.png" alt="">
+                    </div>
+
+                    <div class="avatarFlexOne">
+                        <img src="assets/img/policier1.png" alt="" id="randomAvatar">
+                        <p id="pseudoIa"></p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <p class="result"></p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="endGame">
+
+            <p class="resultFinal">Vous avez gagné/perdu</p>
+
+            <a href="index.html" class="reGame">Rejouer</a>
+
+            <div class="defeatAnimation">
+                <img src="assets/img/billetVictoire.jpg" alt="">
+            </div>
+
+            <audio>
+                <source id="audioFinal" src="assets/sound/victoire.mp3" type="audio/mp3">
+            </audio>
+
+
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
